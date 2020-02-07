@@ -1,0 +1,19 @@
+@using C_Sharp_ViewModelFun.Models
+@model string[]
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    <h4>Let's do Assignment here!</h4>
+    <p>--</p> 
+    <p>Here are some Messages!</p>
+    <p>--</p> 
+    @foreach(var name in Model)
+    {
+        <p>@name</p>
+    }
+</div>
